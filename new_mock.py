@@ -19,7 +19,6 @@ def init():
                                                                     
 def login():
     print ("Welcome \n Login to Your Account")
-
     
     user_accountnumber = int(input ("Enter your account number\n"))
 
@@ -28,8 +27,7 @@ def login():
         
     user_password = input ('Enter your Password\n')
     
-
-    for account_number,userdetails  in database.items():
+    for account_number, userdetails  in database.items():
         if (account_number==user_accountnumber):
 
             if (userdetails[3] == user_password):
